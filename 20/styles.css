@@ -1,0 +1,370 @@
+html body {
+  background-color: white;
+  background-image: url("static/background.png");
+  background-repeat: repeat;
+  color: black;
+  font-family: 'Thasadith', sans-serif;
+  font-weight: lighter;
+
+}
+
+body h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3em;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  text-align: center;
+}
+
+h4 {
+  padding-top: 0.6em;
+  font-weight: 900 !important;
+}
+
+.banner {
+  text-align: center;
+}
+
+.banner img {
+  width: 26vw;
+  margin: 1rem;
+  opacity: 0.8;
+}
+
+.custom-center {
+  margin: 0 auto;
+}
+
+.navbar {
+ 
+  opacity: 0.8;
+}
+.navbar-light{
+   background-color: white !important;
+}
+.timetable{
+  line-height: 1rem;
+}
+button.navbar-toggler {
+  font-size: 0.75rem;
+}
+
+nav li {
+  width: 13.5vw;
+  text-align: center;
+}
+
+.nav-link {
+  color: black !important;
+}
+
+.nav-link:hover {
+  color: grey !important;
+}
+
+.active .nav-link {
+  color: grey !important;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+p.bold-highlight {
+  font-weight: 900 !important;
+}
+
+blockquote {
+  padding-top: 0.6em;
+  padding-bottom: 0px;
+}
+
+blockquote p {
+  font-weight: bold;
+}
+
+.text-container {
+  padding: 3rem 8rem 0rem 8rem;
+  text-align: center;
+}
+
+.projektit {
+  padding: 3rem 16rem 3rem 16rem;
+}
+
+.contact-images {
+  padding-top: 0.2em;
+  padding-bottom: 4em;
+}
+
+.contact-col {
+  padding-top: 2em;
+}
+
+img.contact {
+  max-height: 11vw;
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+}
+
+img.contact:hover {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+
+.index-bottom-img {
+  background-image: url("static/smoke.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.semma-bottom-img {
+  background-image: url("static/gold.png");
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+.tassu-bottom-img {
+  display: block;
+  margin: auto;
+  width: 80%;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+/* .ahky-bottom-img {
+  background-image: url("static/ahky.png");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  opacity: 1;
+} */
+
+.tldr {
+  margin-top: 1.5rem;
+  border-top: lightgray 1px solid;
+  padding-top: 1.5rem;
+}
+
+.tldr a {
+  font-weight: bold;
+  color: black;
+}
+
+.tldr a:hover {
+  color: black;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.vuju-container::after {
+  content: '';
+  background: url("static/Infoahky_asset_marmori.jpg");
+  background-repeat: repeat;
+  opacity: 0.2;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -2; 
+}
+/* .vuju-container .text-container::after {
+  content: '';
+  background: url(static/taustatolppa.png);
+  background-repeat: no-repeat;
+  opacity: 0.2;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-position-x: 98%;
+  background-position-y: bottom;
+} */
+
+.vuju-container .text-container {
+  padding-bottom: 40px;
+}
+
+.vuju-container .timetable-container {
+  list-style-position: inside;
+  text-align: start;
+  display: inline-block;
+  padding-left: 0;
+}
+
+.timetable-container:nth-of-type(1) {
+  padding-left: 60px;
+  margin-bottom: 0;
+}
+
+.vuju-container a {
+  font-weight: 900;
+  color: black;
+}
+
+.vuju-container a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+.vuju-container + footer  {
+  padding: 40px 0;
+  border-top: 1px grey solid;
+}
+
+.vuju-container + footer h2.mb-2 {
+  margin-bottom: 0.75rem !important;
+}
+
+.vuju-container .inner-text-container {
+  max-width: 850px;
+  margin: auto;
+}
+
+.vuju-container h3 {
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.vuju-container h2.mb-2 {
+  margin-bottom: 0.75rem !important;
+}
+
+.partners {
+  padding: 0 20px;
+  margin-top: 40px;
+  display: grid;
+  grid-gap: 50px 50px;
+  align-items: center; 
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 350px));
+}
+
+.partner {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  max-height: 100px;
+}
+
+.partner img {
+  max-width: 65%;
+  max-height: 80px;
+}
+
+.payment-details {
+  padding: 1rem 0;
+}
+
+.payment-details:first-of-type  {
+  border-bottom: 1px grey solid;
+}
+
+@media screen and (max-width: 768px) {
+  body h1 {
+    font-size: 2.5em;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  .text-container {
+    padding: 2rem 2rem 0rem 2rem;
+    margin-bottom: 0px;
+  }
+
+  .projektit {
+    padding: 2rem 2rem 2rem 2rem;
+  }
+
+  nav li {
+    width: 16vw;
+  }
+
+  .active .nav-link {
+    color: grey !important;
+  }
+
+  .banner img {
+    width: 50vw;
+  }
+
+  .text-container.semma {
+    padding-bottom: 1em;
+  }
+
+  .bottom {
+    background-size: auto 50vw;
+    position: fixed;
+  }
+
+  .index-bottom-img {
+    opacity: 0.65;
+  }
+
+  .semma-bottom-img {
+    opacity: 0.4;
+  }
+
+  .ahky-bottom-img {
+    opacity: 0.7;
+    position: fixed;
+    background-size: auto 60vw;
+  }
+
+}
+
+@media screen and (max-width: 575px) {
+  nav li {
+    text-align: left;
+    padding-left: 10px;
+    width: 25vw;
+  }
+
+  h1 {
+    font-size: 60px;
+  }
+
+  img.contact {
+    max-height: 20vh;
+  }
+
+  .timetable-container:nth-of-type(1) {
+    padding-left: 0;
+  }
+  .partner img {
+    max-width: 200px;
+  }
+}
+
+@media screen and (min-width: 1180px) {
+  .partners {
+    grid-template-columns: repeat(3, minmax(250px, 350px));
+  }
+}

@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin:-15px 0 0 0;
+	padding:0;	
+	background-image:url(images/tausta.jpg);
+	overflow:auto;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+
+}
+#main {
+	width:800px;
+	margin:0 auto;
+	background-image:url(images/sivutausta.jpg);	
+	background-repeat:repeat-y;
+	
+}
+#innermain {
+	width:800px;
+	min-height:600px;
+	height:auto;
+	overflow:visible;
+	margin:0 auto;
+	background-image:url(images/logo.jpg);
+	background-repeat:no-repeat;
+}
+#content {
+	float:right;
+	margin-top:220px;
+	width:500px;
+}
+#menu {
+	font-size:15px;	
+	font-weight:bold;
+}
+#menu A {
+	text-decoration:none;
+	color:black;
+}
+#menu A#selected {
+	text-decoration:none;
+	color:black;
+	border-bottom:2px solid black;
+}
+#menu A:hover {
+	text-decoration:none;
+	color:black;
+	border-bottom:2px solid black;
+}
+#text {
+	margin:0 20px 0 0;
+	padding-left:3px;
+	font-size:12px;
+	min-height:270px;
+}
+#text h1 {
+	font-size:16px;
+	border-bottom:2px dotted black;
+	padding:10px 0;
+}
+#map {
+	clear:both;
+	padding:0 20px;	
+}
+#footer {
+	clear:both;
+	padding:15px 0 15px 5px;
+}
+#footer img {
+	vertical-align:top;
+	padding:0 10px;
+	border:0;
+}

@@ -1,0 +1,76 @@
+body {
+		 background-color: rgb(255, 255, 235);
+		 font-family: arial, verdana, sans-serif;
+		 font-size: 12px;
+                padding-left: 2%;
+                padding-top: 2%;
+}
+
+table.mainTable {
+					 width: 700px;
+					 border: 2px solid rgb(0,0,0);
+					 background-color: rgb(255, 186, 0);
+}
+
+table.header {
+         width: 700px;
+}
+
+td.navi {
+					 height: 30px;
+					 font-size: 15px;
+					 font-style: bold;
+                background-color: red;
+        color: rgb(255, 186, 0);
+}
+
+a.navi {
+			 text-decoration: none;
+			 /* font-weight: bold; */
+			 font-size: 20px;
+			 font-family: arial;
+                        color: rgb(255, 235, 0);
+        letter-spacing: 2px;
+
+
+}
+
+a.naviselected {
+        text-decoration: underline;
+        color: rgb(255, 235, 0);
+        font-size: 20px;
+}
+
+a.navi:visited {
+        color: rgb(255, 210, 0);
+}
+
+td.leipis {
+					padding-left: 50px;
+					font-size: 18px;
+					font-family: verdana, arial;
+}
+td.leipis2 {
+                                        font-size: 18px;
+                                        font-family: verdana, arial;
+}
+
+
+
+div.stars {
+					padding-left: 20px;
+					font-style: italic;
+					color: rgb(255, 0, 0);
+}
+
+div.mainstar {
+						 font-size: 22px;
+}
+
+div.schedule {
+                padding-left: 20px;
+}
+
+td.schedule {
+        font-size: 14px;
+}

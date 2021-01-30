@@ -1,0 +1,176 @@
+html, body {
+ margin: 0;
+ padding: 0;
+}
+
+html {
+ background: #f3f7ca 50% -77px repeat-x url(bg-tile-old.jpg);
+ height: 100%;
+}
+
+body {
+ background: 50% 0 repeat-y url(contentbg.png);
+ min-height: 100%;
+ color: black;
+ text-align: center;
+ font-family: verdana, arial, helvetica, sans-serif;
+ font-size: 0.8em;
+ line-height: 1.4em;
+}
+
+#main {
+ text-align: left;
+ margin: 0 auto;
+ width: 736px;
+ background: 50% 0 no-repeat url(header.jpg);
+ height: 100%;
+}
+
+
+#skip {
+ height: 173px;
+ text-indent: -999em;
+}
+
+#nav {
+ margin: 0 15px;
+ height: 40px;
+}
+
+#nav * {
+ margin: 0;
+ padding: 0;
+ display: inline;
+}
+
+#nav a {
+ float: left;
+ margin: 0;
+ height: 42px;
+ background: 0 0 no-repeat url(navi.png);
+ text-indent: -999em;
+ overflow: hidden;
+}
+
+#nav a.etusivu		{ background-position: 15px -44px;		width: 110px;	}
+#nav a.ohjelma		{ background-position: -95px -44px;		width: 115px;	}
+#nav a.liput		{ background-position: -205px -44px;	width: 85px;	}
+#nav a.paikka		{ background-position: -285px -44px;	width: 100px;	}
+#nav a.kiitamme		{ background-position: -385px -44px;	width: 130px;	}
+#nav a.inenglish	{ background-position: -510px -44px;	width: 135px;	}
+
+#nav a.etusivu:hover, .etusivu #nav .etusivu {
+ background-position: 15px 6px;
+}
+#nav a.ohjelma:hover, .ohjelma #nav .ohjelma {
+ background-position: -95px 6px;		width: 115px;
+}
+#nav a.liput:hover, .liput #nav .liput {
+ background-position: -205px 6px;	width: 85px;
+}
+#nav a.paikka:hover, .paikka #nav .paikka {
+ background-position: -285px 6px;	width: 100px;
+}
+#nav a.kiitamme:hover, .kiitamme #nav .kiitamme {
+ background-position: -385px 6px;	width: 130px;
+}
+#nav a.inenglish:hover, .inenglish #nav .inenglish {
+ background-position: -510px 6px;	width: 135px;
+}
+
+/* Etusivulinkin sisällä oleva span - tällä tehdään logosta linkki etusivulle */
+#nav span {
+ display: block;
+ position: absolute;
+ width: 340px;
+ height: 100px;
+ top: 60px;
+ left: 50%;
+ margin: 0 0 0 -355px;
+ cursor: pointer; /* ie */
+}
+
+#content {
+ clear: left;
+ margin: 0 15px;
+ padding: 15px 15px 5px 15px;
+}
+
+#footer {
+ margin: 0 30px;
+ padding: 15px 0 10px;
+ background: 0 0 repeat-x url(line.png);
+}
+
+#footer a {
+ display: block;
+ height: 30px;
+ width: 50%; /* Ettei ny älyttömän isoks mee */
+ line-height: 28px;
+ background: 0 0 no-repeat url(athene.png);
+ padding-left: 40px;
+ color: #222;
+ text-decoration: none;
+}
+
+h1 {
+ font-size: 1em;
+ margin: 5px 0 1em;
+ height: 30px;
+ text-indent: -999em;
+ background: 0 0 no-repeat url(otsikot.png);
+}
+
+.etusivu h1 	{ background-position: 0 0; }
+.ohjelma h1 	{ background-position: 0 -40px; }
+.liput h1 		{ background-position: 0 -80px; }
+.paikka h1 		{ background-position: 0 -120px; }
+.kiitamme h1 	{ background-position: 0 -160px; }
+.inenglish h1 	{ background-position: 0 -200px; }
+
+#main .label {
+ border: 0;
+ height: 0;
+ overflow: hidden;
+ position: absolute;
+}
+
+#fb {
+ background: 0 50% no-repeat url(fb.png);
+ padding-left: 20px;
+}
+
+#sponssit, #sponssit li {
+ margin: 0;
+ padding: 0;
+ list-style: none;
+ overflow: auto;
+}
+
+#sponssit {
+ border-top: 10px solid white; /* borderit collapsaa ni tää on nopee kikka */
+}
+
+img {
+ float: right;
+ margin: 0 0 10px 10px;
+}
+
+#nude {
+ margin-top: -40px;
+ border: 0;
+}
+
+#sponssit img {
+ float: left;
+ margin: 0 10px 20px 0;
+ border: 0;
+}
+
+h2 {
+ font-size: 1.4em;
+}
+
+h3 {
+ font-size: 1.1em;
+}

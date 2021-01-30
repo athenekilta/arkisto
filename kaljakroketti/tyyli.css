@@ -1,0 +1,88 @@
+
+body {
+	position: relative;
+	margin-left: 156px;
+	margin-top: 0px;
+	width: 700px;
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	background-color: black;
+}
+
+img {
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+	height: relative;
+	border: 3px solid white;	
+}
+
+div#kuva {
+	position: absolute;
+	margin-top: -285px;
+	z-index: -1;
+	width: 100%;
+	height: relative;
+}
+
+div#teksti {
+	margin-top: 310px;
+	margin-left: 20px;
+	margin-bottom: 50px;
+}
+
+h1 {
+	font-size: 54px;
+	font-weight: bolder;
+	color: #006600;
+	-webkit-text-stroke: 2px black;
+}
+
+h2 {
+	font-size:30px;
+	color: #006600;
+	-webkit-text-stroke: 1px white;
+}
+
+p {
+	color: white;
+	font-size: 13px;
+}
+
+div#kehuskelut {
+	font-style: italic;
+	font-size: 8px;
+	text-align: center;
+}
+
+ol {
+	color: white;
+	font-size: 13px;
+}
+
+li {
+	color: white;
+	font-size: 13px;
+}
+
+a {
+	text-decoration: none;
+	border-bottom: 1px solid #1cb92e;
+	color: white;
+}
+ 
+a:visited {
+	text-decoration: none;
+	color: white;
+}
+ 
+a:active {
+	border-bottom: 1px solid #1cb92e;
+	text-decoration: none;
+	color: white;
+}
+ 
+a:hover {
+	color: #1cb92e;
+	border-bottom: 1px solid #1cb92e;
+	text-decoration: none;
+}

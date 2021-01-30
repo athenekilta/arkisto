@@ -1,0 +1,135 @@
+@font-face {
+    font-family: Gotham Bold;
+    src: url("GothamBold.otf");
+}
+@font-face {
+    font-family: Caviar Dreams Bold;
+    src: url("Caviar_Dreams_Bold.ttf");
+}
+
+body {
+  background-image: url("kolmiograffa.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+
+
+
+}
+.infoContainer{
+
+	position: relative;
+	top: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	width: 100vw;
+}
+#aaltoihastus{
+
+	text-align: center;
+  font-size: 5em;
+  font-family: Gotham Bold;
+	color: rgb(245, 152, 49);
+	text-transform: uppercase;
+}
+#infos{
+	background-color: rgba(255,255,255,0.7);
+	padding: 4px;
+	border-radius: 40px;
+}
+.info{
+	text-align: center;
+  font-size: 2em;
+  font-family: Gotham Bold;
+}
+.links{
+
+  margin: auto;
+  text-align: center;
+  font-size: 30px;
+	font-family: Gotham Bold;
+
+}
+
+a{
+	color: black;
+	text-decoration: none;
+		margin-bottom: 20px;
+}
+a:visited{
+	color: black;
+  text-decoration: none;
+}
+a:hover{
+	color: grey;
+  text-decoration: none;
+}
+#club{
+  margin: auto;
+  text-align: center;
+  font-size: 4em;
+  font-family: Caviar Dreams Bold;
+  color: rgb(245, 152, 49)
+}
+
+#clockContainer{
+	position: relative;
+	text-align: center;
+	left: calc(50% - 325px);
+	top: 8vh;
+ 	width:620px;
+}
+
+@media only screen and (max-width: 700px) {
+    #infos p{
+			transform: scale(0.8)
+    }
+}
+
+@media only screen and (max-width: 654px) {
+    .clock {
+			transform: scale(0.8)
+		}
+		body{
+				background-size: 100vh;
+		}
+	#club{
+font-size: 3em;
+	}
+	#aaltoihastus{
+		font-size: 4em;
+	}
+
+		.links{
+			top: 20vh
+		}
+		#clockContainer{
+			top: 1vh
+		}
+}
+@media only screen and (max-width: 524px) {
+    .clock {
+			transform: scale(0.6)
+		}
+	#club{
+font-size: 2em;
+	}
+	#aaltoihastus{
+		font-size: 3em;
+	}
+}
+@media only screen and (max-width: 392px) {
+    .clock {
+			transform: scale(0.5)
+		}
+	#club{
+font-size: 1em;
+	}
+	#aaltoihastus{
+		font-size: 2em;
+	}
+		.info{
+			font-size: 1em;
+		}
+}

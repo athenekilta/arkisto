@@ -1,0 +1,77 @@
+div#teksti
+{
+width: 800px;
+height: 793px;
+position: absolute;
+left: 344px;
+top: 50px;
+background: url(taustax.png);
+}
+
+body
+{
+
+background: url(tausta3.png);
+background-color: #212121;
+background-repeat: no-repeat;
+
+}
+
+a
+{
+text-decoration: none;
+color: #adadad;
+}
+
+a:active
+{
+text-decoration: none;
+color: #e3dede;
+}
+
+a:visited
+{
+text-decoration: none;
+color: #adadad;
+}
+
+a:hover
+{
+
+text-decoration: none;
+
+color: #e3dede;
+}
+
+div#logo
+{
+position: absolute;
+left: 400px;
+top: 90px;
+}
+
+img#elisa, img#tiketti
+{
+margin-right: 40px;
+}
+
+img#athene
+{
+border: 0;
+}
+
+div#teksti2
+{
+position: absolute;
+left: 380px;
+width: 460px;
+top: 300px;
+color: #eae8e6;
+font-family: verdana;
+font-size: 13px;
+}
+h1#date
+{
+font-size: 20px;
+margin-left: 30px;
+}

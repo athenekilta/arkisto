@@ -1,0 +1,46 @@
+body {
+ font-family: sans-serif;
+}
+
+#nav ul {
+ margin: 0.2em 0 0;
+ padding: 0;
+}
+
+#nav li {
+ display: block;
+ list-style: none;
+ margin: 0;
+ padding: 0.3em;
+ background: #ffc;
+ border-top: 0.2em solid white;
+}
+
+#nav h2 {
+ display: none;
+}
+
+#nav a.etusivu:hover, .etusivu #nav .etusivu,
+#nav a.ohjelma:hover, .ohjelma #nav .ohjelma,
+#nav a.liput:hover, .liput #nav .liput,
+#nav a.paikka:hover, .paikka #nav .paikka,
+#nav a.kiitamme:hover, .kiitamme #nav .kiitamme,
+#nav a.inenglish:hover, .inenglish #nav .inenglish {
+ font-weight: bold;
+}
+
+#sponssit, #sponssit li {
+ list-style: none;
+ margin: 0;
+ padding: 0;
+}
+
+#sponssit img {
+ max-width: 100%;
+}
+
+#footer {
+ margin-top: 0.3em;
+ padding: 0.3em 0;
+ border-top: 1px solid #ccc;
+}

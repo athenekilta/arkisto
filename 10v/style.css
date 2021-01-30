@@ -1,0 +1,65 @@
+body {
+	background-color: #0D0D0D;
+	font-family: georgia, sans-serif;
+	font-size: 13px;
+	color: #EEEEEE;
+	padding: 0px;
+}
+
+h2 {
+	font-size: 24px;
+	font-variant: small-caps;
+	border-bottom: 1px solid #EEEEEE;
+	padding-left: 333px;
+	background-image: url('liuku.png');
+	background-repeat: repeat-x;
+}
+
+h4 {
+	font-size: 16px;
+	color: #E5A91E;
+	border-bottom: 1px solid #E5A91E;
+	margin-bottom: 30px;
+	margin-top: 20px;
+}
+
+img.logo {
+	float: left;
+	margin-right: 20px;
+	border: 0px;
+}
+
+div.top {
+	padding-top: 30px;
+	padding-left: 50px;
+}
+
+div.menu {
+	line-height: 2.5;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #EEEEEE;
+	margin-left: 51px;
+}
+
+div.main {
+	line-height: 1.5;
+	width: 567px;
+	margin-left: 483px;
+	text-align: justify;
+	color: #DDDDDD;
+	margin-bottom: 30px;
+}
+
+p.bottomtext {
+	font-size: 11px;
+	margin-top: 50px;
+	padding: 3px;
+	text-align: right;
+	border-top: 1px solid #EEEEEE;
+}
+
+a:link {text-decoration: none; color: #85A52A}
+a:active {text-decoration: none; color: #85A52A}
+a:visited {text-decoration: none; color: #85A52A}
+a:hover {text-decoration: underline; color: #E5A91E}

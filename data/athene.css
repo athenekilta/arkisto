@@ -1,0 +1,164 @@
+body { font-family:  Optima, Arial, Helvetica, sans-serif;
+	       font-style: normal;
+	       margin: 20px, 20px, 20px 20px;
+}
+
+p { font-size: 10pt}
+
+.titlemainbg { background: #E6D8C2 url("tausta2.jpg") no-repeat scroll 0px 0px }
+
+.maintitle { background: #BFB1A5 url("grad_unsatbrown.gif") repeat-x scroll 0px 0px; old-background-color: #C6B19E; padding: 5px; display: block; color: #FFFFFF; padding: 5px; padding-left: 10px; }
+
+.maincontent { display: block; padding: 12px;  background: #F2F2F2 url("grad_lgray.gif") repeat-x scroll 0px 0px;}
+
+.contentbg { background-color: #F2F2F2; }
+
+td { border: 0px solid black; }
+
+h1,h2,h3,h4 { display: inline; font-family: Arial, sans-serif; font-style: normal; font-weight: normal; }
+
+h3 { font-size: 18px }
+
+h2 { font-size: 28px;  }
+
+h4 { font-family:  Optima, Arial, Helvetica, sans-serif; font-weight: bold; font-size: 10pt }
+
+table { display: block;}
+
+.side1 { background: #97A3FF url("grad_blue.gif") repeat-x scroll 0px 0px; padding: 5px; padding-bottom: 17px; }
+.side2 { background: #FFFFFF url("grad_white.gif") repeat-x scroll 0px 0px; padding: 5px; padding-bottom: 17px; }
+.side3 { background: #BFB1A5 url("grad_unsatbrown.gif") repeat-x scroll 0px 0px; old-background-color: #C6B19E; padding: 5px; padding-bottom: 17px; }
+
+.side1title { color: #FFFFFF;}
+.side2title { color: #927764;}
+.side3title { color: #FFFFFF;}
+
+.sidetitlebg { padding-bottom: 8px }
+
+.sidestatic { background-color: #E9E9E9; }
+
+.sidecontentrow {
+	padding-top: 2px;
+	padding-left: 2px;
+	padding-right: 8px;
+	font-family: Verdana, sans-serif;
+	font-style: normal;
+	font-size: 10px;
+	vertical-align: top;
+}
+.sidecontentrow p { padding: 0px; margin:0px; margin-bottom: 8px; font-family: Verdana, sans-serif; font-style: normal; font-size: 10px; display: block }
+
+.submitalign { text-align:right; margin-right: 10px;}
+
+.naviback { background: #E9E9E9 url("grad_dgray.gif") repeat-x scroll 0px 0px; }
+
+.naviback a { display:block; font-family: Verdana, sans-serif; font-weight: bold; font-size: 11px; text-decoration: none; color: #000; }
+
+.naviback a:hover { text-decoration: underline; }
+
+ a.navgroup_unsel { padding: 4px; padding-left: 8px; }
+
+ a.navgroup_open { padding: 4px; padding-left: 8px; background-color: #FCFCFC }
+
+ .navgroup_sel { display:block; font-family: Verdana, sans-serif; font-weight: bold; font-size: 11px; padding: 4px; padding-left: 8px; color: #FFF; background-color: #8793EF }
+
+ .navitem_sel { display:block; font-family: Verdana, sans-serif; font-weight: bold; font-size: 11px; color: #FFF; padding: 4px; padding-left: 16px; background-color: #8793EF; original-bg-color-was: #97A3FF,#808AD8,#2B69EF }
+
+ a.navitem_unsel { padding: 4px; padding-left: 16px; background-color: #FCFCFC }
+
+ .spacer { display:block; width: 200px; height: 1px }
+
+ .spacer-wide { display:block; width: 400px; height: 1px }
+
+ .sidebottom { height:10px; background: #E9E9E9 url("grad_dgray.gif") repeat-x scroll 0px 0px; }
+
+ .button {font-family: Verdana, sans-serif; font-style: normal; font-size: 10px}
+
+td { font-size: 11px; }
+h1 { font-size: 17px; }
+
+table.jasentable {
+    padding-left: 10px;
+    border: 2px dotted rgb(153, 153, 153);
+}
+
+div.isoryhmat {
+    /*
+    border: 1px dotted rgb(220,220,220);
+    border-bottom: none;
+    */
+}
+
+div.isoryhma {
+    padding: 10px;
+    /* border-bottom: 1px dotted rgb(220,220,220); */
+    line-height: 20px;
+}
+
+h1.isoryhmaots {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+h2.isoryhmaots {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px;
+}
+
+td.isodata {
+    vertical-align: top;
+    padding-top: 20px;
+    padding-left: 5px;
+    width: 130px;
+}
+
+span.isonavi {
+    letter-spacing: 1px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+td.gallery {
+    vertical-align: top;
+    text-align: left;
+}
+
+table.thumbtable {
+	padding: 10px;
+}
+
+td.thumbcell {
+	padding: 5px;
+}
+
+.ilmoformi {
+	width: 450px;
+	border: 1px solid rgb(152, 152, 152);
+	padding: 10px;
+	background-color: rgb(204, 204, 204);
+}
+
+td.solu, th.heading {
+	text-align: left;
+	width: 120px;
+}
+
+body>table {
+	margin-left: auto;
+	margin-right: auto;
+	width: 800px;
+}
+a:link {
+	color: #000;
+}
+a:visited {
+	color: #000;
+}
+.maincontent a:hover { text-decoration: underline; }

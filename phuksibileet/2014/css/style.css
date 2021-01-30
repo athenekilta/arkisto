@@ -1,0 +1,104 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	max-width: 2000px;
+	padding: 0;
+	margin: 0;
+	background-color: black;
+	color: white;
+	font-family: 'Esteban', serif;
+}
+
+header {
+	width: 100%;
+	text-align: center;
+}
+
+header div img {
+	width: 80%;
+	max-width: 1500px;
+}
+
+.centered {
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+#mmm {
+	width: 70%;
+}
+
+#fb-logo {
+	height: 32px;
+}
+
+#map {
+	width: 80%;
+}
+
+article {
+	text-align: center;
+	clear: both;
+}
+
+h1 {
+	font-family: 'Great Vibes', cursive;
+	font-size: 32px;
+}
+
+.underline {
+	margin-top: -50px;
+	height: 32px;
+}
+
+#badge {
+	float: left;
+	width: 40%;
+	max-width: 763px;
+}
+
+#prices {
+	float: right;
+	width: 60%;
+}
+
+p {
+	font-size: 16px;
+}
+
+#left {
+	text-align: left;
+}
+
+#links {
+}
+
+.link-small {
+	width: 15%;
+	max-width: 224px;
+	margin: 2%;
+}
+
+.link-big {
+	width: 30%;
+	max-width: 500px;
+	margin: 2%;
+}
+
+a {
+	color: white;
+}
+
+a:hover {
+  color: #42f2f2;
+}
+
+footer {
+	font-size: 12px;
+	background-color: black;
+	color: grey;
+	text-align: center;
+	margin: 15px 0;
+}
