@@ -136,7 +136,7 @@ for($i = 1; $i <= 5; $i++){
         "2010" => "Club Tease",
         "2012" => "Club Avast",
 		"2017" => "Club Amazon",
-		
+
       );
 
       function check_addition($title){
@@ -185,24 +185,29 @@ for($i = 1; $i <= 5; $i++){
         }
       }
 
-      echo "<br><h3>Phuksibileet</h3>";
-      $kansio = "phuksibileet/";
-      foreach (scandir($kansio,1) as $url){
-        $nimi = page_title($kansio . $url . "/index.html");
-        if($nimi == null){
-          $nimi = page_title($kansio . $url . "/index.htm");
-        }
-        if($nimi == null){
-          $nimi = page_title($kansio . $url . "/index.php");
-        }
-        if(array_key_exists($url, $overrides)){
-          $nimi = $overrides[$url];
-        }
-        if(is_numeric($url) && $nimi != null){
-          check_addition($nimi);
-          echo "<a href='$kansio$url' target='_blank'><p><b>" . $nimi . "</b> <i>($url)</i></p></a>";
+      $categories = array("vuosijuhlat", "phuksibileet");
+
+      foreach($categories as $category){
+        echo "<br><h3>" . $category . "</h3>";
+        $kansio = $category . "/";
+        foreach (scandir($kansio,1) as $url){
+          $nimi = page_title($kansio . $url . "/index.html");
+          if($nimi == null){
+            $nimi = page_title($kansio . $url . "/index.htm");
+          }
+          if($nimi == null){
+            $nimi = page_title($kansio . $url . "/index.php");
+          }
+          if(array_key_exists($url, $overrides)){
+            $nimi = $overrides[$url];
+          }
+          if(is_numeric($url) && $nimi != null){
+            check_addition($nimi);
+            echo "<a href='$kansio$url' target='_blank'><p><b>" . $nimi . "</b> <i>($url)</i></p></a>";
+          }
         }
       }
+
       ?>
 			</div>
 		</td>
