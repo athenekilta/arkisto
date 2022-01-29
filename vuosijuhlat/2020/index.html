@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="icon" href="/favicon.ico">
+    <title>Infoähky XXI</title>
+</head>
+<body style="background-color: #444;">
+    <header>
+        <img src="assets/ahky_kulta.png" alt="Infoähky XXI">
+    </header>
+    <main>
+        <section id="stream-section">
+            <h2>Seuraa lähetystä</h2>
+            <p style="display: none" id="program-start-info" class="centered">Ohjelma alkaa klo 18.00</p>
+            <!--
+            <div id="youtube-container">
+                <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube-nocookie.com/embed/IQtL7UbO1NQ"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+            -->
+            <p class="centered">Ohjelma on päättynyt. Kiitos juhlijoille!</p>
+            <a href="https://www.facebook.com/events/3419866918103954/" target="_blank" class="centered">Infoähky XXI Facebookissa</a>
+        </section>
+        <section id="program">
+            <h2>Ohjelma &amp; aikataulu</h2>
+            <ul>
+                <li>
+                    Vuosijuhlapäälliköiden avaus&shy;sanat
+                </li>
+                <li>
+                    Riston tervehdys
+                </li>
+                <li>
+                    Athenen hallitus '20
+                </li>
+                <li>
+                    Polyteknikkojen Kuoron kvar&shy;tetti
+                </li>
+                <li>
+                    Puheenjohtajan puhe
+                </li>
+                <li>
+                    Kunniamerkkien jako
+                </li>
+                <li>
+                    Phuksispeksi
+                </li>
+                <li>
+                    Loppumalja
+                </li>
+            </ul>
+            <p class="centered">
+                Ohjelma alkaa klo 18.00 ja kestää noin kaksi tuntia.
+            </p>
+        </section>
+        <section id="text-section">
+        <h2>Digiähky, jee!</h2>
+        <p>
+        <p>
+        Vuosi 2020 on ollut monin tavoin tavallisesta poikkeava, kuten oli myös Info&shy;ähkyn järjestäminen. Matkan varrella on tullut vastaan useampi mutka ja kierros, ainakin kaksi umpi&shy;kujaa sekä lukematon määrä pieniä kaarroksia ja iteraatioita. Niiden kaikkien kautta olemme nyt täällä: kaikkien aikojen ensimmäinen digitaalinen Info&shy;ähky voi alkaa.
+        </p>
+
+        <p>
+Digitaalisesta kääreestä huolimatta luvassa on pläjäys lähes kaikkia perinteiseen vuosi&shy;juhlaan kuuluvia perinteitä kunnia&shy;merkkien ja puheiden merkeissä, unohtamatta kuitenkaan muutamia tilanteen suomia uudistuksia vuosi&shy;juhla&shy;etikettiin. Pukeudu siis miten haluat, valitse sopiva laite ja klikkaa itsesi Informaatio&shy;verkostojen kilta Athenen kahdennenteen&shy;kymmenenteen ensimmäiseen vuosijuhlaan. Infoähky XXI on täällä!
+        </p>
+
+        <p class="centered">❤️:lla,</p>
+
+        <h3>Vuosijuhlatirehtöörit</h3>
+        <p class="centered">Aili Hukka &amp; Markus Ihamuotila</p>
+        <p class="centered">sekä</p>
+
+        <h3>Vuosijuhla&shy;toimikunta</h3>
+        <ul>
+            <li>Katariina Korolainen</li>
+            <li>Antti Kari-Koskinen</li>
+            <li>Emma Kankkunen</li>
+            <li>Kristiina Suojanen</li>
+            <li>Samuel Moawad</li>
+            <li>Anni Kivilaakso</li>
+            <li>Joonas Rasa</li>
+            <li>Lina Mäkelä</li>
+        </ul>
+        </p>
+        </section>
+        <section id="thanks-section">
+            <h2>Kiitokset</h2>
+            <p>
+                <a href="https://oubs.fi/" target="_blank">OUBS</a>
+            </p>
+        </section>
+    </main>
+    <footer>
+        <p>
+            <span id="tietsikka-kuumana">Käykö tietsikka liian kuumana?</span>
+            <span class="a" id="config-element">Lopeta taustan animointi</span>
+        </p>
+        <p id="visitor-counter" style="display: none;"></p>
+        <p>Tietskarijengi &lt;3 Infoähky</p>
+    </footer>
+    <script>
+const configElement = document.getElementById("config-element");
+const tietsikkaElement = document.getElementById("tietsikka-kuumana");
+
+configElement.addEventListener("click", () => {
+    if (document.body.style.animationName === "none") {
+        document.body.style.animationName = "background-animation";
+        configElement.innerHTML = "Lopeta taustan animointi";
+        tietsikkaElement.innerHTML = "Käykö tietsikka liian kuumana?";
+
+    } else {
+        document.body.style.animationName = "none";
+        configElement.innerHTML = "Animoi tausta";
+        tietsikkaElement.innerHTML = "Haluatko sivuille pientä juhlatunnelmaa?";
+    }
+});
+    </script>
+    <script>
+// Show start time before the stream begins
+const startInfoElement = document.getElementById("program-start-info");
+const startTime = new Date("2020-11-28T18:00:00+02:00");
+const showInfo = () => {
+    if (+ startTime >= + new Date()) {
+        startInfoElement.style.display = "block";
+        setTimeout(showInfo, 1000);
+    } else {
+        startInfoElement.style.display = "none";
+    }
+};
+showInfo();
+    </script>
+    <script src="https://sampo.website/app/visitor-count/js/counter.js"></script>
+</body>
+</html>

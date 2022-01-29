@@ -127,15 +127,14 @@ for($i = 1; $i <= 5; $i++){
       <?php
 
       $overrides = array(
-        // Phuksibileille vuosiluku, muille kansion nimi
 
         "kaljakroketti" => "Kaljakrokettiturnaus 2011",
-        "2002" => "Club Havana",
-        "2003" => "Club Mañana",
-        "2008" => "Club Anamñam",
-        "2010" => "Club Tease",
-        "2012" => "Club Avast",
-		"2017" => "Club Amazon",
+        "phuksibileet/2002" => "Club Havana",
+        "phuksibileet/2003" => "Club Mañana",
+        "phuksibileet/2008" => "Club Anamñam",
+        "phuksibileet/2010" => "Club Tease",
+        "phuksibileet/2012" => "Club Avast",
+		    "phuksibileet/2017" => "Club Amazon",
 
       );
 
@@ -188,7 +187,7 @@ for($i = 1; $i <= 5; $i++){
       $categories = array("vuosijuhlat", "phuksibileet");
 
       foreach($categories as $category){
-        echo "<br><h3>" . $category . "</h3>";
+        echo "<br><h3>" . ucwords($category) . "</h3>";
         $kansio = $category . "/";
         foreach (scandir($kansio,1) as $url){
           $nimi = page_title($kansio . $url . "/index.html");
@@ -198,7 +197,7 @@ for($i = 1; $i <= 5; $i++){
           if($nimi == null){
             $nimi = page_title($kansio . $url . "/index.php");
           }
-          if(array_key_exists($url, $overrides)){
+          if(array_key_exists($kansio . $url, $overrides)){
             $nimi = $overrides[$url];
           }
           if(is_numeric($url) && $nimi != null){
