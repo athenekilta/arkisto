@@ -1,11 +1,4 @@
-
-
-
-
-
-
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-        "http://www.w3.org/TR/2000/REC-xhtml1-20000126/DTD/xhtml1-transitional.dtd">
+<!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <link rel="shortcut icon" href="data/athene.ico" type="image/x-icon"/>
@@ -135,6 +128,8 @@ for($i = 1; $i <= 5; $i++){
         "phuksibileet/2010" => "Club Tease",
         "phuksibileet/2012" => "Club Avast",
 		    "phuksibileet/2017" => "Club Amazon",
+	"vuosijuhlat/2021" => "Infoähky XXII",
+	"vuosijuhlat/2022" => "Infoähky XXIII"
 
       );
 

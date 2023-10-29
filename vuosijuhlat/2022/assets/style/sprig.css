@@ -1,0 +1,20 @@
+
+.kapy {
+    background-image: url('../img/kapy.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 42vh;
+    border: none;
+    margin-bottom: 5vh;
+}
+
+.sprig-hr {
+    background-image: url('../img/aalto.svg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 4rem;
+    padding-bottom: 1vh;
+    border: none;
+}

@@ -1,0 +1,191 @@
+@import 'fonts.css';
+@import 'sprig.css';
+
+
+:root {
+    --bg-col: rgb(20, 31, 49);
+    --text-col: white;
+    --sans-font:
+        system-ui, -apple-system, BlinkMacSystemFont,
+        'Segoe UI',
+        'Roboto', 'Noto Sans', 'Droid Sans',
+        'Ubuntu',
+        sans-serif;
+    --mono-font:
+        ui-monospace,
+        'Cascadia Mono',
+        'Hack',
+        'Noto Mono',
+        'Ubuntu Mono',
+        'Roboto Mono',
+        Menlo, Monaco, Consolas,
+        monospace;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(20, 31, 49);
+    background-image: url("../img/bg.jpg");
+}
+
+body * {
+    color: var(--text-col);
+    font-size: 1.2rem;
+    font-family: var(--sans-font);
+    font-family: 'Avenir Next';
+    
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Avenir Next";
+    text-transform: uppercase;
+    font-weight: lighter;
+    letter-spacing: 3px;
+    margin: 1rem auto 1.2rem auto;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+#laskeutuminen {
+    height: 78vh;
+    width: 100%;
+    padding: 10vh 0 10vh 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+#laskeutuminen h1, #laskeutuminen h2, #laskeutuminen h3 {
+    margin: 0;
+    display: block;
+    text-align: center;
+    font-family: "Avenir Next";
+}
+
+#laskeutuminen h1 {
+    color: #FFF3CA;
+    font-size: 7.4vh;
+    letter-spacing: 10px;
+    margin-bottom: 20px;
+}
+
+#laskeutuminen h2 {
+    color: #FFF3CA;
+    letter-spacing: 5px;
+    font-size: 4.8vh;
+}
+
+#laskeutuminen h3 {
+    margin-top: 3.5vh;
+    
+}
+
+.section-margin {
+    margin-top: 3.5vh;
+}
+
+.infotaulukko {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.infotaulukko span:nth-child(2n - 1) {
+    font-weight: normal;
+    margin-right: 1rem;
+}
+
+.centered {
+    text-align: center;
+}
+
+article {
+    max-width: 40rem;
+    margin: 2rem auto;
+    padding: 1rem;
+    line-height: 2rem;
+    text-align: justify;
+}
+
+.kumppanit {
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+    padding-top: 2rem;
+}
+
+.kumppanit div {
+    filter: brightness(0) invert(1);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.kumppanit div img {
+    width: 100%;
+}
+
+@keyframes wave {
+    0% {
+        transform: rotate(0deg);
+    }       
+    25% {
+        transform: rotate(10deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    75% {
+        transform: rotate(-10deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+.kumppanit div img:hover {
+    animation-name: wave;
+    animation-duration: 0.3s;
+    animation-iteration-count: 3;
+    animation-timing-function: linear;
+}
+
+/* nitor has a different kind of logo */
+.kumppanit div:nth-child(1) {
+    margin-top: -1.5rem;
+}
+
+@media screen and (max-width: 500px) {
+    .kumppanit {
+        grid-template-columns: 1fr;
+        grid-gap: 3rem;
+        width: 30%;
+        margin: auto;
+    }
+    #laskeutuminen {
+        height: 87vh;
+    }
+    #laskeutuminen h1 {
+        letter-spacing: 5px;
+    }
+    
+    #laskeutuminen h2 {
+        letter-spacing: 3px;
+    }
+
+}
+
+footer, footer * {
+    font-size: 0.7rem;
+    line-height: 1rem;
+}

@@ -1,0 +1,38 @@
+.sprig-container {
+    position: relative;
+    width: 0;
+    height: 0;
+    z-index: 100;
+}
+
+#sprig-main-top {
+    top: -13rem;
+    left: calc(50vw - 15rem);
+}
+
+#sprig-main-top img {
+    transform: scaleX(-1) rotate(30deg);
+}
+
+#sprig-main-bottom {
+    top: 6rem;
+    left: calc(50vw - 15rem);
+}
+
+.sprig-container .large {
+    width: 25rem;
+}
+
+.sprig-container img, .sprig-container .large{
+    max-width; 90vw;
+    overflow: hidden;
+}
+
+.sprig-hr {
+    background-image: url('../img/sprig.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 4rem;
+    border: none;
+}
