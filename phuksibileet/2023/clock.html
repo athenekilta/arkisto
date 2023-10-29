@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Club X</title>
+		<style>
+			html,
+			body {
+				margin: 0;
+				background-color: #000;
+				color: rgb(255, 200, 207);
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+			}
+
+			.clock-wrapper {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				width: 100%;
+				margin-top: 20vh;
+			}
+
+			@font-face {
+				font-family: clock;
+				src: url(./assets/fonts/alarm\ clock.ttf);
+			}
+
+			@font-face {
+				font-family: neon;
+				src: url(./assets/fonts/alarm\ clock.ttf);
+			}
+
+			h2 {
+				font-family: Orbitron, neon, sans-serif;
+				text-transform: uppercase;
+				text-align: center;
+			}
+
+			#clock {
+				font-size: min(12vw, 6rem);
+				font-family: clock;
+				text-transform: uppercase;
+				position: relative;
+				margin: 0;
+				padding: 0;
+				z-index: 0;
+				--shadow-color: rgba(255, 75, 75, 0.75);
+				text-shadow: 0 0 1px #fff, 0 0 20px rgb(255, 97, 97),
+					0 0 60px rgb(254, 83, 83), 0 0 80px var(--shadow-color),
+					0 0 100px var(--shadow-color);
+			}
+
+			#clock::before {
+				content: "ÆÆ:ÆÆ:ÆÆ:ÆÆ:ÆÆÆ";
+				color: gray;
+				opacity: 0.3;
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: -1;
+			}
+
+			.legend {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+				width: 100%;
+				font-family: Orbitron, sans-serif;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="clock-wrapper">
+			<span id="clock"></span>
+			<div class="legend">
+				<span>d</span>
+				<span>h</span>
+				<span>min</span>
+				<span>s</span>
+				<span>ms</span>
+			</div>
+		</div>
+		<script>
+			const clock = document.querySelector("#clock");
+
+			// Congratz you found the date, your're so smart
+			const t0 = new Date(Date.parse("2023-03-30T00:00:00+02:00"));
+
+			// Updates the clock
+			const tick = () => {
+				const timeNow = new Date();
+
+				// Fixes time being of by time zone amount
+				timeNow.setTime(
+					timeNow.getTime() -
+						new Date().getTimezoneOffset() * 60 * 1000
+				);
+
+				const clockTime = new Date(t0.getTime() - timeNow.getTime());
+
+				// Yeah I don't know either, it's black magic
+				if (clockTime.valueOf() > -7200000) {
+					// Date needs -1 because "time 0" is 1st of Jan 1970, not 0th of Jan
+					const dd = String(clockTime.getDate() - 1).padStart(2, "0");
+					const hh = String(clockTime.getHours()).padStart(2, "0");
+					const MM = String(clockTime.getMinutes()).padStart(2, "0");
+					const ss = String(clockTime.getSeconds()).padStart(2, "0");
+					const mm = String(clockTime.getMilliseconds()).padStart(
+						3,
+						"0"
+					);
+
+					const display =
+						dd + ":" + hh + ":" + MM + ":" + ss + ":" + mm;
+					clock.innerHTML = display;
+				} else {
+					clock.innerHTML = "00:00:00:00:000";
+				}
+			};
+
+			// Updates every 16 ms, or roughly 60 times per second to match the screen refresh rate
+			setInterval(tick, 16);
+		</script>
+	</body>
+</html>
