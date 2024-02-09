@@ -1,0 +1,123 @@
+@font-face {
+    font-family: 'Dustismo Roman';
+    src: url('/Dustismo_Roman.woff2');
+}
+
+
+
+
+body {
+    font-family: 'Dustismo Roman', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #111111;
+    color: #FAEECF;
+}
+
+
+.teaser {
+    gap: 16px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+.headingSection {
+    margin: 0 0 25px 0;
+}
+
+h1 {
+    font-size: 42px;
+    margin: 4px 0;
+    font-family: 'Dustismo Roman', sans-serif;
+}
+
+h2 {
+    font-size: 36px;
+    margin: 0px 0 2px 0;
+    font-family: 'Dustismo Roman', sans-serif;
+}
+
+h3 {
+    font-size: 23px;
+    margin: 4px 0;
+    font-family: 'Dustismo Roman', sans-serif;
+}
+
+h4 {
+    margin: 0 0 4px 0;
+    font-size: 22px;
+}
+h5 {
+    margin: 0 0 4px 0;
+    font-size: 15px;
+}
+
+#countdown {
+    font-size: 34px;
+    margin: 10px 0 0 0;
+    font-family: 'Dustismo Roman', sans-serif;
+}
+
+a {
+    color: #FAEECF;
+    font-size: 22px;
+    transition: all 0.1s;
+}
+
+a:hover, a:active {
+    color: #AD3231;
+}
+
+
+footer {
+    display: flex;
+    margin: 15px 0 0 0;
+}
+
+footer div a {
+    font-size: 15px;
+    
+    display: flex;
+    
+    
+    align-items: center;
+    text-decoration: none;
+    margin-right: 20px;
+}
+footer div a i {
+    font-size: 34px;
+    margin-right: 5px;
+}
+.instagram {
+    
+    margin-right: 0px;
+}
+footer div a p {
+    text-decoration: underline;
+}
+
+
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 52px;
+    }
+
+    a, h2 {
+        font-size: 38px;
+    }
+
+    h3 {
+        font-size: 28px;
+    }
+
+    #countdown {
+        font-size: 36px;
+    }
+}
